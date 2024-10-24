@@ -4,19 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invoice</title>
+    <style>
+        .boxInvoice{
+            width: 800px;
+            margin: 10px auto;
+            padding: 15px 50px;
+        }
+        .companyContainer{
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between;
+        }
+        .companyTitle{
+            font-size: 20px; 
+            margin-bottom: 0px;
+        }
+        .companyAddress{
+            font-size: 15px;
+            color: #88898a; 
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+        .companyContact{
+            font-size: 15px;
+            font-weight: 900;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+        .companyContact>span{
+            color: #88898a;
+        }
+        .logo{
+            color: #88898a; 
+            font-size: 50px;
+        }
+        .logo>span{
+            color: #A23153;
+        }  
+
+    </style>
 </head>
-<body style="padding: 15px 50px;">
+<body class="boxInvoice">
     <header>
-        <div style="display: flex; align-items: center; justify-content: space-between;">
-            <div>
-                <h3 style="font-size: 30px; margin-bottom: 0px;margin-top: 0px;">Your Company</h3>
-                <p style="color: #88898a; margin-bottom: 0px;margin-top: 0px;">1725 Slough Ave., demo</p>
-                <p style="color: #88898a; margin-bottom: 0px;margin-top: 0px;">Scranton, Pennsylvania, 18540, United States</p>
-                <p style="font-weight: 900; margin-bottom: 0px;margin-top: 0px;">Mobile: <span style="color: #88898a;">89665 222</span></p>
-                <p style="font-weight: 900; margin-bottom: 0px;margin-top: 0px;">Email: <span style="color: #88898a;">info@yourcompany.example.com</span></p>
+        <div class="companyContainer">
+            <div class="companyInfo">
+                <h3 class="companyTitle">Your Company</h3>
+                <p class="companyAddress">1725 Slough Ave., demo</p>
+                <p class="companyAddress">Scranton, Pennsylvania, 18540, United States</p>
+                <p class="companyContact">Mobile: <span>89665 222</span></p>
+                <p class="companyContact">Email: <span>info@yourcompany.example.com</span></p>
             </div>
             <div>
-                <h1 style="color: #88898a; font-size: 100px;"><span style="color: #A23153;">o</span>doo</h1>
+                <h1 class="logo"><span>o</span>doo</h1>
             </div>
         </div>
     </header>
