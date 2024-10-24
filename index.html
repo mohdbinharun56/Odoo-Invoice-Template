@@ -75,60 +75,76 @@
         .invoiceTO>p>span {
             font-weight: 900;
         }
-        .invoiceDetails>table{
+
+        .invoiceDetails>table {
             width: 400px;
             border-bottom: 2px solid #0c0c49;
             border-left: 2px solid #0c0c49;
             border-right: 2px solid #0c0c49;
         }
-        .invoiceDetails>table>thead{
+
+        .invoiceDetails>table>thead {
             text-align: start;
             background: #0c0c49;
             color: #ffff;
         }
-        .invoiceNo{
+
+        .invoiceNo {
             text-align: end;
             padding-right: 15px;
             padding-top: 15px;
             padding-bottom: 15px;
         }
-        .invoice{
+
+        .invoice {
             text-align: start;
             padding-left: 15px;
         }
-        .invoiceDetails>table>tbody>tr>th{
+
+        .invoiceDetails>table>tbody>tr>th {
             text-align: start;
             padding-left: 15px;
             padding-top: 5px;
             padding-bottom: 5px;
         }
-        .invoiceDetails>table>tbody>tr>td{
+
+        .invoiceDetails>table>tbody>tr>td {
             text-align: end;
             padding-right: 15px;
         }
 
-        .products{
+        .products {
             margin-top: 30px;
         }
-        .products>table{
+
+        .products>table {
             font-size: 15px;
             border: 1px solid #d0d0d0;
         }
 
-        .products>table>thead{
+        .products>table>thead {
             background: #0c0c49;
             color: #ffff;
             /* border: none; */
         }
-        .products>table>thead>tr>th{
+
+        .products>table>thead>tr>th {
             text-align: center;
             padding: 10px;
         }
-        .products>table>tbody{
+
+        .products>table>tbody {
             text-align: center;
         }
-        .products>table>tbody>tr>td{
+
+        .products>table>tbody>tr>td {
             border: 1px solid #d0d0d0;
+        }
+
+        .calc {
+            width: 40%;
+            margin-top: 20px;
+            margin-left: auto;
         }
     </style>
 </head>
@@ -232,13 +248,40 @@
                         <td>$ 4,410.00</td>
                     </tr>
                 </tbody>
-                
+
             </table>
         </div>
 
         <div class="calc">
+            <div style="display: flex; justify-content: space-between; border-bottom: 2px solid #88898a;">
+                <div style="text-align: start;">
+                    <h3>Sub Total</h3>
+                </div>
+                <div style="text-align: end;">
+                    <h3>$ 6,095.40</h3>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: space-between; border-bottom: 2px solid #88898a;">
+                <div style="text-align: start;">
+                    <h3>Taxes</h3>
+                </div>
+                <div style="text-align: end;">
+                    <h3>$ 0.00</h3>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+                <div style="text-align: start;">
+                    <h2>Total</h2>
+                </div>
+                <div style="text-align: end;">
+                    <h3>$ 6,095.40</h3>
+                </div>
+            </div>
 
+            
         </div>
+
+        <hr>
     </main>
 
 </body>
