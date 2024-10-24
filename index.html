@@ -1,68 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invoice</title>
     <style>
-        .boxInvoice{
+        .boxInvoice {
             width: 800px;
             margin: 10px auto;
             padding: 15px 50px;
         }
-        .companyContainer{
-            display: flex; 
-            align-items: center; 
+
+        .companyContainer {
+            display: flex;
+            align-items: center;
             justify-content: space-between;
         }
-        .companyTitle{
-            font-size: 20px; 
+
+        .companyTitle {
+            font-size: 20px;
             margin-bottom: 0px;
         }
-        .companyAddress{
+
+        .companyAddress {
             font-size: 15px;
-            color: #88898a; 
+            color: #88898a;
             margin-bottom: 0px;
             margin-top: 0px;
         }
-        .companyContact{
+
+        .companyContact {
             font-size: 15px;
             font-weight: 900;
             margin-bottom: 0px;
             margin-top: 0px;
         }
-        .companyContact>span{
+
+        .companyContact>span {
             color: #88898a;
         }
-        .logo{
-            color: #88898a; 
+
+        .logo {
+            color: #88898a;
             font-size: 50px;
         }
-        .logo>span{
+
+        .logo>span {
             color: #A23153;
         }
-        .information{
+
+        .information {
             margin-top: 30px;
             padding: 15px;
             background: #d0d0d0;
             border-top: 2px solid #0c0c49;
             border-bottom: 2px solid #0c0c49;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        .informationTitle{
+        .informationTitle {
             color: #0c0c49;
         }
-        .invoiceTO>p{
+
+        .invoiceTO>p {
             margin-bottom: 0px;
             margin-top: 0px;
             font-weight: 500;
             font-size: 16px;
         }
-        .invoiceTO>p>span{
+
+        .invoiceTO>p>span {
             font-weight: 900;
         }
+        .invoiceDetails>table{
+            width: 400px;
+            border-bottom: 2px solid #0c0c49;
+            border-left: 2px solid #0c0c49;
+            border-right: 2px solid #0c0c49;
+        }
+        .invoiceDetails>table>thead{
+            text-align: start;
+            background: #0c0c49;
+            color: #ffff;
+        }
+        .invoiceNo{
+            text-align: end;
+            padding-right: 15px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .invoice{
+            text-align: start;
+            padding-left: 15px;
+        }
+        .invoiceDetails>table>tbody>tr>th{
+            text-align: start;
+            padding-left: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .invoiceDetails>table>tbody>tr>td{
+            text-align: end;
+            padding-right: 15px;
+        }
+
+        .products{
+            margin-top: 30px;
+        }
+
     </style>
 </head>
+
 <body class="boxInvoice">
     <header>
         <div class="companyContainer">
@@ -88,9 +139,37 @@
                 <p>Le Bourget du Lac, 73377, France</p>
                 <p><span>Email:</span> ayaan.agarwal@bestdesigners.exampl</p>
             </div>
-
+            <div class="invoiceDetails">
+                <table border="0" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th class="invoice">Invoice No:</th>
+                            <th class="invoiceNo">INV/2016/0013</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Invoice Date:</th>
+                            <td>20-04-16</td>
+                        </tr>
+                        <tr>
+                            <th>SO:</th>
+                            <td>SO013</td>
+                        </tr>
+                        <tr>
+                            <th>Order Date:</th>
+                            <td>20-04-16</td>
+                        </tr>
+                        <tr>
+                            <th>Due Date:</th>
+                            <td>31-05-16</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </main>
 
 </body>
+
 </html>
